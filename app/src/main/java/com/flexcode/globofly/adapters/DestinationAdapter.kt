@@ -1,4 +1,4 @@
-package com.flexcode.globofly.helpers
+package com.flexcode.globofly.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater

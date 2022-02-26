@@ -1,9 +1,10 @@
-package com.flexcode.globofly.services
+package com.flexcode.globofly.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 object ServiceBuilder {
 
@@ -14,7 +15,9 @@ object ServiceBuilder {
 
 
     //okhttp client
-    private val okHttp = OkHttpClient.Builder().addInterceptor(logger)
+    private val okHttp = OkHttpClient.Builder()
+        .callTimeout(5,TimeUnit.SECONDS)
+        .addInterceptor(logger)
     //retrofit Builder
     private val builder = Retrofit.Builder().baseUrl(URL)
         .addConverterFactory(GsonConverterFactory.create())

@@ -6,10 +6,9 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.flexcode.globofly.databinding.ActivityDestinyDetailBinding
-import com.flexcode.globofly.helpers.SampleData
 import com.flexcode.globofly.models.Destination
-import com.flexcode.globofly.services.NetworkService
-import com.flexcode.globofly.services.ServiceBuilder
+import com.flexcode.globofly.api.NetworkService
+import com.flexcode.globofly.api.ServiceBuilder
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

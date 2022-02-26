@@ -1,4 +1,4 @@
-package com.flexcode.globofly.services
+package com.flexcode.globofly.api
 
 import com.flexcode.globofly.models.Destination
 import retrofit2.Call
